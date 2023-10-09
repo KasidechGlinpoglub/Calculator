@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #AC3520;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+}
+
+input[type="text"] {
+
+    font-size: 24px;
+    padding: 11px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    background-color: #ff8809;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+/* เปลี่ยนสีปุ่ม "C" และ "AC" โดยใช้คลาส */
+.clear-button {
+    background-color:#AC3520;
+    color: #fff;
+}
+
+.hover-button:hover {
+    background-color: #ff8809;
+}
+
+
+.clear-history-button {
+    text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+}
+
+.clear-history-button button {
+    white-space: nowrap; /* ข้อความไม่ต้องเว้นบรรทัด */
+}
+
