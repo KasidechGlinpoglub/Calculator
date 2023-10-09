@@ -15,12 +15,18 @@ body {
     width: 300px;
     padding: 20px;
 }
-
 input[type="text"] {
-
     font-size: 24px;
-    padding: 11px;
+    padding: 10px;
     margin-bottom: 10px;
+    width: 92%; /* ปรับความกว้างให้เท่ากับครึ่งหน้าจอ */
+}
+
+/* สำหรับโทรศัพท์และอุปกรณ์ที่มีหน้าจอเล็ก */
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 92%; /* ปรับความกว้างให้เต็มหน้าจอ */
+    }
 }
 
 .buttons {
